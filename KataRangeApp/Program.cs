@@ -31,10 +31,19 @@ switch (opcion)
         Console.WriteLine(booleano);
         break;
     case 4:
+        Console.WriteLine("Escriba un segundo rango: ");
+        sinput = Console.ReadLine();
+        booleano = r1.ContainsRange(input, sinput);
+        Console.WriteLine(booleano);
         break;
     case 5:
+        Console.WriteLine("Escriba un segundo rango a comparar: ");
+        sinput = Console.ReadLine();
+        booleano = r1.Equals(input, sinput);
+        Console.WriteLine(booleano);
         break;
     default:
+        Console.WriteLine("No ingreso una opcion valida");
         break;
 }
 
